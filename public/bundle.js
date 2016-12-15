@@ -55,10 +55,12 @@
 	    IndexRoute = _require.IndexRoute,
 	    hashHistory = _require.hashHistory;
 
+	var Main = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Main\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 	ReactDOM.render(React.createElement(
-	    'h1',
-	    null,
-	    'Welcome to my Weather app!'
+	    Router,
+	    { history: hashHistory },
+	    React.createElement(Route, { path: '/', component: Main })
 	), document.getElementById("react-container"));
 
 /***/ },
