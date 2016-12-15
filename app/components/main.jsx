@@ -14,14 +14,12 @@ var Weather = require('Weather');
 //    }
 //});
 
-var Main = (props) => {
-    return (
+var Main = (props) => (
         <div>
             <Nav></Nav>
-            <h2>The main component</h2>
+            <h2>The component</h2>
             {props.children}
         </div>
     );
-}
 
 module.exports = Main;
