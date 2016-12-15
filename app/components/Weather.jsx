@@ -15,7 +15,7 @@ var Weather = React.createClass({
         openWeatherMap.getTemp(location).then(function (temp) {
             that.setState({
                 location : location,
-                temp: 44
+                temp: temp
             });
         }, function (err) {
             alert(err);
