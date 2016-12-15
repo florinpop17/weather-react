@@ -26481,7 +26481,7 @@
 	    handleSearch: function handleSearch(location) {
 	        this.setState({
 	            location: location,
-	            temp: 23
+	            temp: 44
 	        });
 	    },
 	    render: function render() {
@@ -26555,8 +26555,9 @@
 	            null,
 	            'It is ',
 	            this.props.temp,
-	            ' in ',
-	            this.props.location
+	            'C in ',
+	            this.props.location,
+	            '.'
 	        );
 	    }
 	});
