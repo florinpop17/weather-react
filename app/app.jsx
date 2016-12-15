@@ -3,6 +3,10 @@ var ReactDOM = require('react-dom');
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 
 ReactDOM.render(
-    <h1>Welcome to my Weather app!</h1>, 
+    <Router history={hashHistory}>
+        <Route path="/" component={}>
+            
+        </Route>
+    </Router>, 
     document.getElementById("react-container")
 );
