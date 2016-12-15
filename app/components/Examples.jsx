@@ -5,7 +5,7 @@ var Examples = (props) => {
     return (
         <div>
             <h3 className="text-center">Examples</h3>
-            <p>Here are a few example locations to try out:</p>
+            <p className="text-center">Here are a few example locations to try out:</p>
             <ol>
                 <li>
                     <Link to='/?location=Bucuresti'>Bucuresti, Romania</Link>
