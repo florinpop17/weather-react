@@ -26554,13 +26554,17 @@
 	    displayName: 'WeatherMessage',
 
 	    render: function render() {
+	        var _props = this.props,
+	            temp = _props.temp,
+	            location = _props.location;
+
 	        return React.createElement(
 	            'p',
 	            null,
 	            'It is ',
-	            this.props.temp,
+	            temp,
 	            'C in ',
-	            this.props.location,
+	            location,
 	            '.'
 	        );
 	    }
