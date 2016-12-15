@@ -23,8 +23,8 @@ var Weather = React.createClass({
                 isLoading: false
             });
         }, function (err) {
-            that.setState({isLoading: false});
-            alert(err);
+            that.setState({isLoading: false})
+            alert('City not found!');
         });
     },
     render: function() {
