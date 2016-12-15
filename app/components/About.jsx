@@ -10,7 +10,7 @@ var About = React.createClass({
 
 var About = () => (
     <div className="text-center">
-        <h1>About</h1>
+        <h1 className="page-title">About</h1>
         <p>This is a simple react app that shows the weather in different locations.</p>
         <p>Built after <a href="https://www.udemy.com/the-complete-react-web-app-developer-course/">this</a> udemy course.</p>
         <p>Some tools used:</p>
