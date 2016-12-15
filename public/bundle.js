@@ -26500,17 +26500,13 @@
 
 	    renter: function renter() {
 	        return React.createElement(
-	            "div",
+	            "form",
 	            null,
+	            React.createElement("input", { type: "text" }),
 	            React.createElement(
-	                "form",
+	                "button",
 	                null,
-	                React.createElement("input", { type: "text" }),
-	                React.createElement(
-	                    "button",
-	                    null,
-	                    "Get Weather"
-	                )
+	                "Get Weather"
 	            )
 	        );
 	    }
