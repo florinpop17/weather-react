@@ -8,7 +8,7 @@ var About = require('About');
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Main}>
-            <Route path="about" component={About}/>
+            <Route path="about" component={About}></Route>
             <IndexRoute component={Weather}/>
         </Route>
     </Router>, 
