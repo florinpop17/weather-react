@@ -1,7 +1,8 @@
 var React = require('react');
+var Nav = require('Nav');
 
 var WeatherForm = React.createClass({
-   renter: function() {
+   render: function() {
        return (
            <div>
                <input type="text"/>
