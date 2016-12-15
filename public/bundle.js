@@ -26418,7 +26418,7 @@
 	        return React.createElement(
 	            'h2',
 	            null,
-	            'Nav component'
+	            'Navbar component'
 	        );
 	    }
 	});
