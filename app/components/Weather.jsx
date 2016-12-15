@@ -20,7 +20,7 @@ var Weather = React.createClass({
            <div>
                <h3>Weather Component</h3>
                <WeatherForm onSearch={this.handleSearch}/>
-               <WeatherMessage/>
+               <WeatherMessage location={this.state.location} temp={this.state.temp}/>
            </div>
        );
     } 

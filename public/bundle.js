@@ -26494,7 +26494,7 @@
 	                'Weather Component'
 	            ),
 	            React.createElement(WeatherForm, { onSearch: this.handleSearch }),
-	            React.createElement(WeatherMessage, null)
+	            React.createElement(WeatherMessage, { location: this.state.location, temp: this.state.temp })
 	        );
 	    }
 	});
@@ -26553,7 +26553,10 @@
 	        return React.createElement(
 	            'p',
 	            null,
-	            'It is 40 in Philadelphia'
+	            'It is ',
+	            this.props.temp,
+	            ' in ',
+	            this.props.location
 	        );
 	    }
 	});
