@@ -26444,12 +26444,12 @@
 	                'Get Weather'
 	            ),
 	            React.createElement(
-	                IndexLink,
+	                Link,
 	                { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	                'About'
 	            ),
 	            React.createElement(
-	                IndexLink,
+	                Link,
 	                { to: '/examples', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
 	                'Examples'
 	            )
