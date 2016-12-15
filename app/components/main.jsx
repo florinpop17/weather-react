@@ -6,7 +6,7 @@ var Main = React.createClass({
         return (
             <div>
                 <Nav></Nav>
-                <h2>Main Component</h2>
+                <h2>The main Component</h2>
             </div>
         );
     }

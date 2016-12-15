@@ -26395,7 +26395,7 @@
 	            React.createElement(
 	                'h2',
 	                null,
-	                'Main Component'
+	                'The main Component'
 	            )
 	        );
 	    }
