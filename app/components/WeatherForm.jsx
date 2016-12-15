@@ -2,7 +2,7 @@ var React = require('react');
 
 var WeatherForm = React.createClass({
    renter: function() {
-       return: (
+       return (
            <div>
                <form>
                    <input type="text"/>

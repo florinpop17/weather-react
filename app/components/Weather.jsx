@@ -4,8 +4,10 @@ var WeatherForm = require('WeatherForm');
 var Weather = React.createClass({
    render: function() {
        return (
-           <h3>Weather Component</h3>
-           <WeatherForm/>
+           <div>
+               <h3>Weather Component</h3>
+               <WeatherForm/>
+           </div>
        );
    } 
 });

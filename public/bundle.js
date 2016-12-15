@@ -56,9 +56,9 @@
 	    hashHistory = _require.hashHistory;
 
 	var Main = __webpack_require__(233);
-	var Weather = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Weather\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	var About = __webpack_require__(236);
-	var Examples = __webpack_require__(237);
+	var Weather = __webpack_require__(235);
+	var About = __webpack_require__(237);
+	var Examples = __webpack_require__(238);
 
 	ReactDOM.render(React.createElement(
 	    Router,
@@ -26392,7 +26392,7 @@
 
 	var React = __webpack_require__(1);
 	var Nav = __webpack_require__(234);
-	var Weather = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Weather\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var Weather = __webpack_require__(235);
 
 	var Main = React.createClass({
 	    displayName: 'Main',
@@ -26460,8 +26460,66 @@
 	module.exports = Nav;
 
 /***/ },
-/* 235 */,
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var WeatherForm = __webpack_require__(236);
+
+	var Weather = React.createClass({
+	    displayName: 'Weather',
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(
+	                'h3',
+	                null,
+	                'Weather Component'
+	            ),
+	            React.createElement(WeatherForm, null)
+	        );
+	    }
+	});
+
+	module.exports = Weather;
+
+/***/ },
 /* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var React = __webpack_require__(1);
+
+	var WeatherForm = React.createClass({
+	    displayName: "WeatherForm",
+
+	    renter: function renter() {
+	        return React.createElement(
+	            "div",
+	            null,
+	            React.createElement(
+	                "form",
+	                null,
+	                React.createElement("input", { type: "text" }),
+	                React.createElement(
+	                    "button",
+	                    null,
+	                    "Get Weather"
+	                )
+	            )
+	        );
+	    }
+	});
+
+	module.exports = WeatherForm;
+
+/***/ },
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26483,7 +26541,7 @@
 	module.exports = About;
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
