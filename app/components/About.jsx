@@ -8,6 +8,11 @@ var About = React.createClass({
    } 
 });
 
-var About = () => <h3>About component</h3>;
+var About = () => (
+    <div>
+        <h3>About</h3>
+        <p>This is a simple react app that shows the weather in different locations.</p>
+    </div>
+);
 
 module.exports = About;
