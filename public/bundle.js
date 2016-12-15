@@ -26563,7 +26563,7 @@
 	            null,
 	            'It is ',
 	            temp,
-	            'C in ',
+	            '\xB0C in ',
 	            location,
 	            '.'
 	        );
