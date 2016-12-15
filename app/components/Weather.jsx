@@ -16,13 +16,14 @@ var Weather = React.createClass({
        });
     },
     render: function() {
-       return (
+        var {temp, location} = this.state
+        return (
            <div>
                <h3>Weather Component</h3>
                <WeatherForm onSearch={this.handleSearch}/>
-               <WeatherMessage location={this.state.location} temp={this.state.temp}/>
+               <WeatherMessage location={location} temp={temp}/>
            </div>
-       );
+        );
     } 
 });
 
