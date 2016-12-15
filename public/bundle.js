@@ -26468,6 +26468,7 @@
 	var React = __webpack_require__(1);
 	var WeatherForm = __webpack_require__(236);
 	var WeatherMessage = __webpack_require__(237);
+	var openWeatherMap = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"openWeatherMap\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var Weather = React.createClass({
 	    displayName: 'Weather',
@@ -26479,9 +26480,14 @@
 	        };
 	    },
 	    handleSearch: function handleSearch(location) {
-	        this.setState({
-	            location: location,
-	            temp: 44
+	        var that = this;
+	        openWeatherMap.getTemp(location).then(function (temp) {
+	            that.setState({
+	                location: location,
+	                temp: 44
+	            });
+	        }, function (err) {
+	            alert(err);
 	        });
 	    },
 	    render: function render() {
