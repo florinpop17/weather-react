@@ -55,7 +55,7 @@
 	    IndexRoute = _require.IndexRoute,
 	    hashHistory = _require.hashHistory;
 
-	var Main = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"Main\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var Main = __webpack_require__(233);
 
 	ReactDOM.render(React.createElement(
 	    Router,
@@ -26374,6 +26374,56 @@
 	  });
 	};
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var Nav = __webpack_require__(234);
+
+	var Main = React.createClass({
+	    displayName: 'Main',
+
+	    render: function render() {
+	        return React.createElement(
+	            'div',
+	            null,
+	            React.createElement(Nav, null),
+	            React.createElement(
+	                'h2',
+	                null,
+	                'Main Component'
+	            )
+	        );
+	    }
+	});
+
+	module.exports = Main;
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Nav = React.createClass({
+	    displayName: 'Nav',
+
+	    render: function render() {
+	        return React.createElement(
+	            'h2',
+	            null,
+	            'Nav component'
+	        );
+	    }
+	});
+
+	module.exports = Nav;
 
 /***/ }
 /******/ ]);
